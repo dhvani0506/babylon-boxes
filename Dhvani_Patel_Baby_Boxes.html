@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    Dhvani Patel
+    CS 360/560 - Introduction to Computer Graphics, Fall 2026
+    Project 5, Problem 1 - Modified Baby Boxes scene
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dhvani Patel">
+    <title>Dhvani Patel - Babylon.js Stacked Boxes</title>
+
+    <!-- Babylon.js -->
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+    <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+    <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+
+    <!-- File name must match exactly (GitHub Pages is case-sensitive) -->
+    <script defer src="Dhvani_Patel_Baby_Boxes.js"></script>
+    <style>
+        html,
+        body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+
+        #canvasZone {
+            width: 100%;
+            height: 100%;
+        }
+
+        #nameTag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            padding: 10px 14px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            pointer-events: none;
+        }
+
+        #nameTag h1 {
+            margin: 0;
+            font-size: 20px;
+            color: #222;
+        }
+
+        #nameTag p {
+            margin: 2px 0 0;
+            font-size: 13px;
+            color: #555;
+        }
+
+        #credits {
+            position: absolute;
+            bottom: 8px;
+            left: 12px;
+            font-size: 11px;
+            color: #444;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
+
+    <div id="nameTag">
+        <h1>Dhvani Patel</h1>
+        <p>CS 360/560 &middot; Project 5 &middot; Stacked Boxes Scene</p>
+    </div>
+
+    <div id="credits">
+        Models HVGirl, aerobatic_plane, and seagulf from the
+        <a href="https://github.com/BabylonJS/Assets" target="_blank">Babylon.js Assets</a> repository (CC BY 4.0).
+        Drag to orbit &middot; scroll to zoom.
+    </div>
+</body>
+</html>
